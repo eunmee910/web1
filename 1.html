@@ -1,23 +1,69 @@
 <!doctype html>
 <html>
 <head>
- <title>독서와 브런치🥞</title>
+ <title>학력</title>
  <meta charset="utf-8">
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175183900-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-175183900-1');
+  </script>
+  <style>
+  #active {
+    color:green;
+  }
+  .saw {
+    color:gray;
+   }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:80px;
+      text-align:center;
+      border-bottom: 2px solid gray;
+      padding: 50px;
+      margin: 100px;
+    }
+    ol {
+      font-size: 20px;
+      font-weight:bold;
+      padding: 2px;
+      padding-left: 100px;
+    }
+    .school {
+      color:green;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">HOME</a></h1>
-  <ol>
-   <li><a href="1.html">독서와 브런치🥞</a><br></li>
-   <li><a href="2.html">동네 미용실💇</a><br></li>
-   <li><a href="3.html">오늘 저녁 뭐 먹지❓</a><br></li>
-  </ol>
-
-<h2>독서와 브런치🥞</h2>
-<p>
-   내가 지금 가장 먹고 싶은 건 <strong><u>향기로운 홍차</u>와 <u>블루베리가 올라간 팬케이크</u>다.</strong><br><i><br>왜? 집에서도 그런 식사는 충분히 즐길 수 있는걸?<br></i><br>하지만 내가 원하는 건 휴양지에서의 브런치다. 몇 년 전에 마지막으로 방문했던 태국의 <a href="https://www.woodland-resort.com/" target="_blank" title="woodland">우드랜드 호텔</a>에서 소설을 읽고 낮잠을 자고 팬케이크를 몇 조각 집어먹고 싶다.
-</p>
-<p>
-  <img src="brunch.jfif"width=350 height=550>
-  <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/730/73042456.jpg"height=550>
-</p>
+  <div id="grid">
+    <ol>
+     <li><a href="1.html" id="active">📚 학력</a><br></li>
+     <li><a href="2.html" class="saw">동네 미용실💇</a><br></li>
+     <li><a href="3.html" class="saw">오늘 저녁 뭐 먹지❓</a><br></li>
+    </ol>
+    <div>
+      <h2>학력</h2>
+        <p>
+          <div class="school">
+           <ul><li><a href="https://mangpo.hs.kr/" target="_blank">망포고등학교</a></li>
+           <li><a href="https://ssu.ac.kr/" target="_blank">숭실대학교</a></li></ul>
+             <div class="major"><b>주전공</b> 예술창작학부 문예창작전공<br>
+             <b>융합전공</b> 문화서비스산업전공</div>
+          </div>
+        </p>
+    </div>
+  </div>
+  <p>
+    <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"width=350 height=550>
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/730/73042456.jpg"height=550>
+  </p>
 </body>
