@@ -13,42 +13,73 @@
   gtag('config', 'UA-175183900-1');
 </script>
 <style>
+body {
+  margin:0px;
+}
 .saw {
-  color:gray;
+ color:green;
+}
+ a {
+ color:black;
+ text-decoration: none;
  }
-  a {
-    color:black;
-    text-decoration: none;
+.head1 {
+  font-size:40px;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  padding: 50px;
+  margin: 0px;
+ }
+.head1 img {
+  width: 100px;
+}
+.head1 h1 {
+  margin: 0px;
+}
+ #grid {
+   display: grid;
+   grid-template-columns: 270px 1fr;
+ }
+ #grid ol {
+   border-right:1px solid gray;
+   width: 200px;
+   margin: 0px;
+   padding: 20px;
+   padding-left: 44px;
+   font-weight: bold;
+   font-size: 20px;
+ }
+ #article {
+   padding-left: 30px;
+   padding-right: 30px;
+ }
+ @media(max-width:600px) {
+    #grid {
+      display: block;
+   }
+   #grid ol {
+     border-right:none;
+   }
+   h1 {
+     border-bottom:none;
   }
-  h1 {
-    font-size:80px;
-    text-align:center;
-    border-bottom: 2px solid gray;
-    padding: 50px;
-    margin: 100px;
-  }
-  ol {
-    font-size: 20px;
-    font-weight:bold;
-    padding: 2px;
-    padding-left: 100px;
-  }
+ }
 </style>
 </head>
 <body>
-  <h1><a href="index.html">HOME</a></h1>
-  <ol>
-   <li><a href="1.html">독서와 브런치🥞</a><br></li>
-   <li><a href="2.html">동네 미용실💇</a><br></li>
-   <li><a href="3.html">오늘 저녁 뭐 먹지❓</a><br></li>
-  </ol>
-
-<h2>동네 미용실💇</h2>
-<p>
-   원래 오늘 저녁에 망포동에 있는 <a href="http://riahn.kr/">리안헤어</a>에서 앞머리를 자르려고 했는데 그냥 내일 자르기로 했다.<text style="color:gray"<strong><br>빛나쌤</storng>이랑 <strong>마루쌤</strong> 둘다 휴무여서 가기 싫어졌다!</text>앞머리도 자르고 머리 상태 상담도 받으려고 했기 때문이다.<br>동네 사람 다 됐다는 소리를 들을 정도로 한 동네에서의 '살이'에 익숙해지려면 친한 미용사 한 명쯤은 <u>필수</u>다.
- </p>
-<p>
-  <img src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"height=550>
-  <img src="https://images.unsplash.com/photo-1535637603896-07c179d71103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"height=550>
-</p>
+  <div class="head1">
+   <a href="index.html"><img src="unicorn.png"></a> <h1><a href="index.html">HOME PAGE</a></h1>
+  </div>
+  <div id="grid">
+    <ol>
+     <li><a href="1.html" class="saw">📚 학력</a><br></li>
+     <li><a href="2.html" id="active">동네 미용실💇</a><br></li>
+     <li><a href="3.html" class="saw">오늘 저녁 뭐 먹지❓</a><br></li>
+    </ol>
+  <div id="article">
+  <p>
+     원래 오늘 저녁에 망포동에 있는 <a href="http://riahn.kr/">리안헤어</a>에서 앞머리를 자르려고 했는데 그냥 내일 자르기로 했다.<text style="color:gray"<strong><br>빛나쌤</storng>이랑 <strong>마루쌤</strong> 둘다 휴무여서 가기 싫어졌다!</text>앞머리도 자르고 머리 상태 상담도 받으려고 했기 때문이다.<br>동네 사람 다 됐다는 소리를 들을 정도로 한 동네에서의 '살이'에 익숙해지려면 친한 미용사 한 명쯤은 <u>필수</u>다.
+  </p>
+  </div>
+ </div>
 </body>
