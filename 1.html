@@ -1,89 +1,218 @@
 <!doctype html>
 <html lang="ko">
 <head>
- <title>학력</title>
- <meta charset="utf-8">
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175183900-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-175183900-1');
-  </script>
+  <title>Welcome!</title>
+  <meta charset="utf-8">
   <style>
-  body {
-    margin:0px;
-  }
- .saw {
-   color:green;
-  }
-   a {
-   color:black;
-   text-decoration: none;
-   }
- .head1 {
-    font-size:40px;
-    text-align: center;
-    border-bottom: 2px solid gray;
-    padding: 50px;
-    margin: 0px;
-   }
-  .head1 img {
-    width: 100px;
-  }
-  .head1 h1 {
-    margin: 0px;
-  }
-   #grid {
-     display: grid;
-     grid-template-columns: 270px 1fr;
-   }
-   #grid ol {
-     border-right:1px solid gray;
-     width: 200px;
-     margin: 0px;
-     padding: 20px;
-     padding-left: 44px;
-     font-weight: bold;
-     font-size: 20px;
-   }
-   #article {
-     padding-left: 30px;
-     padding-right: 30px;
-   }
-   @media(max-width:600px) {
+
+    <!-- font -->
+    @font-face {
+      font-family: 'NeoDunggeunmo';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+      font-family: 'Black Han Sans', sans-serif;
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      font-family: 'Noto Sans KR', sans-serif;
+
+    body {
+      margin:0px;
+    }
+    .saw {
+      color:green;
+    }
+
+    #head1 {
+      font-size:40px;
+      text-align: center;
+      border-bottom: 2px solid gray;
+      padding: 80px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+      margin: 10px;
+     }
+    #head1 img {
+      width: 140px;
+      padding: 30px;
+      padding-top: 10px;
+    }
+    #head1 h1 {
+      margin: 0px;
+      font-family: 'Black Han Sans', sans-serif;
+    }
+    #head1 a {
+      text-decoration: none; color: black;
+    }
+    #head1 a:hover, a:active {
+      text-decoration: underline;
+    }
+
+    #font {
+      font-family: 'NeoDunggeunmo'
+    }
+
+    #grid {
+       display: grid;
+       grid-template-columns: 270px 1fr;
+    }
+    #grid dl {
+      border-right:1px solid gray;
+      width: 270px;
+      margin: 0px;
+      padding: 20px;
+      padding-right: 60px;
+      line-height: 160%;
+      font-size: 32px;
+      font-family: 'NeoDunggeunmo'
+     }
+    #grid dl img {
+      width: 32px;
+      vertical-align: middle;
+     }
+    #grid dl a {
+      text-decoration: underline;
+      text-underline-position: under;
+      color: black;
+      width: 32px;
+      height: 32px;
+    }
+    #grid .saw {
+      color: #ffb400;
+    }
+
+    #article {
+      padding-left: 120px;
+      padding-right: 30px;
+     }
+    #article h2 {
+      font-size: 32px;
+    }
+    #article .img {
+      display: block;
+      margin-right: auto;
+      padding: 40px;
+      padding-left: 0px;
+      padding-bottom: 5px;
+    }
+    #article .text {
+      line-height: 160%;
+    }
+    #article .update {
+      font-style: italic;
+      color: gray;
+      padding: 20px;
+      background-color: #e1e1e1;
+      line-height: 160%;
+    }
+    #article .update a {
+      text-decoration: none;
+    }
+    #article .update dd:before {
+      content: "> ";
+    }
+
+    @media(max-width:700px) {
+      #head1 img {
+        width: 240px;
+      }
       #grid {
         display: block;
+       }
+      #grid dl {
+        border-right:none;
+       }
+      h1 {
+        border-bottom:none;
+      }
+      #article {
+        padding: 20px;
+      }
+      #article .img {
+        width: auto;
+      }
      }
-     #grid ol {
-       border-right:none;
+
+     #disqus_thread {
+       font-family: 'NeoDunggeunmo'
+       padding: 70px;
+       padding-top: 100px;
+       padding-right: 100px;
      }
-     h1 {
-       border-bottom:none;
-    }
-   }
-  </style>
+ </style>
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175183900-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175183900-1');
+</script>
 </head>
 <body>
-  <div class="head1">
-   <a href="index.html"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/unicorn-face_1f984.png"></a> <h1><a href="index.html">HOME PAGE</a></h1>
+  <div id= "head1">
+    <a href="index.html"><img src="https://ifh.cc/g/ijPBaq.png"></a>
+    <a href="index.html"><h1>HOME PAGE</h1></a>
   </div>
-  <div id="grid">
-    <ol>
-     <li><a href="1.html" id="active">📚 학력</a><br></li>
-     <li><a href="2.html" class="saw">동네 미용실💇</a><br></li>
-     <li><a href="3.html" class="saw">오늘 저녁 뭐 먹지❓</a><br></li>
-    </ol>
-     <div id="article">
-      <h2>학력</h2>
+  <div id="font">
+    <div id="grid">
+      <dl>
+        <dd>
+          <a href="1.html"><img src="https://image.flaticon.com/icons/svg/2312/2312179.svg"></a>
+          <a href="1.html" class="saw">학력</a>
+          <br>
+        </dd>
+        <dd>
+          <a href="2.html"><img src="https://image.flaticon.com/icons/svg/2333/2333041.svg"></a>
+          <a href="2.html">교내활동</a>
+          <br>
+        </dd>
+        <dd>
+          <a href="3.html"><img src="https://image.flaticon.com/icons/svg/2405/2405253.svg"></a>
+          <a href="3.html">‍교외활동</a>
+          <br>
+        </dd>
+      </dl>
+      <div id="article">
+        <br>
+            <div class="img">
+              <a href="https://ssu.ac.kr/"><img src="https://www.dhnews.co.kr/news/photo/201907/105432_105963_4155.png"></a>
+            </div>
+        <h2>숭실대학교</h2>
         <p>
-           <ul><li><a href="https://mangpo.hs.kr/" target="_blank"><u>망포고등학교</u></a></li>
-           <li><a href="https://ssu.ac.kr/" target="_blank"><u>숭실대학교</u></a></li></ul>
-           <div class="major"><b>주전공</b> 예술창작학부 문예창작전공<br>
-           <b>융합전공</b> 문화서비스산업전공</div>
+            <li>예술창작학부 문예창작전공</li>
+            <li>문화서비스산업 융합전공</li>
+            <div class="img">
+              <a href="https://mangpo.hs.kr/" target="_blank"><img src="https://ifh.cc/g/ejkB8J.jpg"></a>
+            </div>
+        <h2>망포고등학교</h2>
+        <p>
+            <li>1학년 8반</li>
+            <li>2학년 5반</li>
+            <li>3학년 1반</li>
+            <br>
+          </div>
         </p>
+      </div>
     </div>
   </div>
+<p>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f30ecac5c885a1b7fb7b20d/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</p>
+
 </body>
