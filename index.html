@@ -1,60 +1,101 @@
 <!doctype html>
-<html>
+<html lang="ko">
 <head>
- <title>Welcome!</title>
- <meta charset="utf-8">
- <style>
-  body {
-    margin:0px;
-  }
- .saw {
-   color:green;
-  }
-   a {
-   color:black;
-   text-decoration: none;
-   }
- .head1 {
-    font-size:40px;
-    text-align: center;
-    border-bottom: 2px solid gray;
-    padding: 50px;
-    margin: 0px;
-   }
-  .head1 img {
-    width: 100px;
-  }
-  .head1 h1 {
-    margin: 0px;
-  }
-   #grid {
-     display: grid;
-     grid-template-columns: 270px 1fr;
-   }
-   #grid ol {
-     border-right:1px solid gray;
-     width: 200px;
-     margin: 0px;
-     padding: 20px;
-     padding-left: 44px;
-     font-weight: bold;
-     font-size: 20px;
-   }
-   #article {
-     padding-left: 30px;
-     padding-right: 30px;
-   }
-   @media(max-width:600px) {
+  <title>Welcome!</title>
+  <meta charset="utf-8">
+  <style>
+
+    <!-- font -->
+    @font-face {
+      font-family: 'NeoDunggeunmo';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+      font-family: 'Black Han Sans', sans-serif;
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      font-family: 'Noto Sans KR', sans-serif;
+
+    body {
+      margin:0px;
+    }
+    .saw {
+      color:green;
+    }
+    #head1 {
+      font-size:40px;
+      text-align: center;
+      border-bottom: 2px solid gray;
+      padding: 80px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+      margin: 10px;
+     }
+    #head1 img {
+      width: 140px;
+      padding: 30px;
+      padding-top: 10px;
+    }
+    #head1 h1 {
+      margin: 0px;
+      font-family: 'Black Han Sans', sans-serif;
+    }
+    #head1 a {
+      text-decoration: none; color: black;
+    }
+    #head1 a:hover, a:active {
+      text-decoration: underline;
+    }
+    #font {
+      font-family: 'NeoDunggeunmo'
+    }
+    #grid {
+       display: grid;
+       grid-template-columns: 270px 1fr;
+    }
+    #grid ol {
+      border-right:1px solid gray;
+      width: 200px;
+      margin: 0px;
+      padding: 20px;
+      padding-left: 44px;
+      font-size: 16px;
+      font-family: 'NeoDunggeunmo'
+     }
+    #article {
+      padding-left: 30px;
+      padding-right: 30px;
+     }
+    #article h2 {
+      font-size: 32px;
+    }
+    #article .update {
+      font-style: italic;
+      color: gray;
+      padding: 20px;
+      background-color: #e1e1e1;
+      line-height: 160%;
+    }
+    #article .update a {
+      text-decoration: none;
+    }
+    @media(max-width:600px) {
       #grid {
         display: block;
+       }
+      #grid ol {
+        border-right:none;
+       }
+      h1 {
+        border-bottom:none;
+      }
      }
-     #grid ol {
-       border-right:none;
+     #disqus_thread {
+       padding: 50px;
+       padding-top: 100px;
+       padding-right: 100px;
      }
-     h1 {
-       border-bottom:none;
-    }
-   }
  </style>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -68,24 +109,36 @@
 </script>
 </head>
 <body>
-  <div class="head1">
-   <a href="index.html"><img src="unicorn.png"></a> <h1><a href="index.html">HOME PAGE</a></h1>
+  <div id= "head1">
+    <a href="index.html"><img src="https://ifh.cc/g/ijPBaq.png"></a>
+    <a href="index.html"><h1>HOME PAGE</h1></a>
   </div>
-<div id="grid">
-  <ol>
-    <li><a href="1.html" class="saw">독서와 브런치🥞</a><br></li>
-    <li><a href="2.html" class="saw">동네 미용실💇</a><br></li>
-    <li><a href="3.html" class="saw">오늘 저녁 뭐 먹지❓</a><br></li>
-  </ol>
-  <div id="article">
-    <h2>소갯말</h2>
-    <p>
-      안녕하세요! 이것은 기획자가 되기로 마음 먹은 김은미가 2020년 8월 6일에 처음으로 만든 웹페이지입니다. 생활코딩을 통해 html과 CSS를 연습 중입니다.
-      <br><br>
-    <li>2020. 08. 16. 유니콘 그림을 추가했습니다. 유니콘을 누르면 홈 화면으로 이동합니다.</li>
-    </p>
+  <div id="font">
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">독서와 브런치🥞</a><br></li>
+        <li><a href="2.html">동네 미용실💇</a><br></li>
+        <li><a href="3.html">오늘 저녁 뭐 먹지❓</a><br></li>
+      </ol>
+      <div id="article">
+        <h2>소갯말</h2>
+        <p>
+          안녕하세요! 이것은 기획자가 되기로 마음 먹은 김은미가 2020년 8월 6일에 처음으로 만든 웹페이지입니다. 생활코딩을 통해 html과 CSS를 연습 중입니다.
+          <br><br>
+          <div class="update">
+            <li>2020. 08. 16.</li>
+            유니콘 그림을 추가했습니다. 유니콘을 누르면 홈 화면으로 이동합니다.
+            <br>
+            <br>
+            <li>2020. 08. 17.</li>
+            헤드에 <a href="https://fonts.google.com/specimen/Black+Han+Sans">검은고딕</a>을, 바디에 <a href="https://neodgm.dalgona.dev/">네오둥근모</a> 폰트를 적용했습니다.
+            <br>
+            유니콘 그림을 미모지로 바꾸었습니다.
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
- </div>
 <p>
   <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -101,6 +154,7 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 </p>
+
 <p>
   <div id="disqus_thread"></div>
   <script>
@@ -122,6 +176,6 @@ s0.parentNode.insertBefore(s1,s0);
   })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 </p>
+
 </body>
