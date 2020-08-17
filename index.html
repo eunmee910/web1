@@ -23,6 +23,7 @@
     .saw {
       color:green;
     }
+
     #head1 {
       font-size:40px;
       text-align: center;
@@ -47,24 +48,38 @@
     #head1 a:hover, a:active {
       text-decoration: underline;
     }
+
     #font {
       font-family: 'NeoDunggeunmo'
     }
+
     #grid {
        display: grid;
        grid-template-columns: 270px 1fr;
     }
-    #grid ol {
+    #grid dl {
       border-right:1px solid gray;
-      width: 200px;
+      width: 270px;
       margin: 0px;
       padding: 20px;
-      padding-left: 44px;
-      font-size: 16px;
+      padding-right: 60px;
+      line-height: 160%;
+      font-size: 32px;
       font-family: 'NeoDunggeunmo'
      }
+    #grid dl img {
+      width: 32px;
+     }
+    #grid dl a {
+      text-decoration: underline;
+      text-underline-position: under;
+      color: black;
+      width: 32px;
+      height: 32px;
+    }
+
     #article {
-      padding-left: 30px;
+      padding-left: 120px;
       padding-right: 30px;
      }
     #article h2 {
@@ -80,19 +95,25 @@
     #article .update a {
       text-decoration: none;
     }
-    @media(max-width:600px) {
+
+    @media(max-width:700px) {
+      #head1 img {
+        width: 240px;
+      }
       #grid {
         display: block;
        }
-      #grid ol {
+      #grid dl {
         border-right:none;
        }
       h1 {
         border-bottom:none;
       }
      }
+
      #disqus_thread {
-       padding: 50px;
+       font-family: 'NeoDunggeunmo'
+       padding: 70px;
        padding-top: 100px;
        padding-right: 100px;
      }
@@ -115,16 +136,32 @@
   </div>
   <div id="font">
     <div id="grid">
-      <ol>
-        <li><a href="1.html">독서와 브런치🥞</a><br></li>
-        <li><a href="2.html">동네 미용실💇</a><br></li>
-        <li><a href="3.html">오늘 저녁 뭐 먹지❓</a><br></li>
-      </ol>
+      <dl>
+        <dd>
+          <a href="1.html"><img src="https://image.flaticon.com/icons/svg/2312/2312179.svg"></a>
+          <a href="1.html">학력</a>
+          <br>
+        </dd>
+        <dd>
+          <a href="2.html"><img src="https://image.flaticon.com/icons/svg/2333/2333041.svg"></a>
+          <a href="2.html">교내활동</a>
+          <br>
+        </dd>
+        <dd>
+          <a href="3.html"><img src="https://image.flaticon.com/icons/svg/2405/2405253.svg"></a>
+          <a href="3.html">‍교외활동</a>
+          <br>
+        </dd>
+      </dl>
       <div id="article">
         <h2>소갯말</h2>
         <p>
-          안녕하세요! 이것은 기획자가 되기로 마음 먹은 김은미가 2020년 8월 6일에 처음으로 만든 웹페이지입니다. 생활코딩을 통해 html과 CSS를 연습 중입니다.
-          <br><br>
+          <div class="text">
+            안녕하세요! 이것은 기획자가 되기로 마음 먹은 김은미가 2020년 8월 6일에 처음으로 만든 웹페이지입니다. 생활코딩을 통해 html과 CSS를 연습 중입니다.
+            <br>
+            <br>
+            <br>
+          </div>
           <div class="update">
             <li>2020. 08. 16.</li>
             유니콘 그림을 추가했습니다. 유니콘을 누르면 홈 화면으로 이동합니다.
